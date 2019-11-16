@@ -46,9 +46,12 @@ Please check the list below for the specific syntax you need.
 
 Currently, the `@compat` macro supports the following syntaxes:
 
-## Module Aliases
+None.
 
-## New functions, macros, and methods
+## New functions and methods
+
+* Function composition now supports multiple functions: `∘(f, g, h) = f ∘ g ∘ h`
+  and splatting `∘(fs...)` for composing an iterable collection of functions ([#33568]).
 
 * `only(x)` returns the one-and-only element of a collection `x` ([#33129]). (since Compat 2.2.0)
 
@@ -65,16 +68,21 @@ Currently, the `@compat` macro supports the following syntaxes:
 
 * `merge` methods with one and `n` `NamedTuple`s ([#29259]). (since Compat 2.0.0)
 
+## New macros
+
+None.
+
+## New types
+
+None.
+
 ## Renaming
 
-## New macros
+None.
 
 ## Other changes
 
-* Function composition now supports multiple functions: `∘(f, g, h) = f ∘ g ∘ h`
-  and splatting `∘(fs...)` for composing an iterable collection of functions ([#33568]).
-
-## New types
+None.
 
 ## Developer tips
 
